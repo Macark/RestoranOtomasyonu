@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="638.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Urunler">
+   <children>
+      <TableView fx:id="tblUrun" layoutY="235.0" prefHeight="241.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="col_Id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_UrunAdi" prefWidth="75.0" text="Ürün Adı" />
+            <TableColumn fx:id="col_UrunKategori" prefWidth="92.0" text="Ürün Kategori" />
+            <TableColumn fx:id="col_UrunFiyat" prefWidth="75.0" text="Ürün Fiyat" />
+        </columns>
+      </TableView>
+      <Label layoutX="57.0" layoutY="25.0" text="Ürün Adı:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="62.0" text="Ürün Kategori:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="104.0" text="Ürün Fiyat:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUrunAdi" layoutX="135.0" layoutY="25.0" />
+      <TextField fx:id="txtUrunFiyat" layoutX="136.0" layoutY="104.0" />
+      <ComboBox fx:id="comboKategori" layoutX="135.0" layoutY="62.0" onAction="#UrunSec" prefWidth="150.0" />
+      <Button fx:id="btnUrunEkle" layoutX="331.0" layoutY="23.0" mnemonicParsing="false" onAction="#btn_ClickUrunEkle" prefHeight="44.0" prefWidth="164.0" styleClass="Button" stylesheets="@application.css" text="Ürün Ekle" textFill="#0cae35">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUrunGuncelle" layoutX="331.0" layoutY="75.0" mnemonicParsing="false" onAction="#btn_ClickUrunGuncelle" prefHeight="44.0" prefWidth="164.0" styleClass="Button" stylesheets="@application.css" text="Ürün Güncelle" textFill="#0745e1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUrunSil" layoutX="331.0" layoutY="129.0" mnemonicParsing="false" onAction="#btn_ClickUrunSil" prefHeight="44.0" prefWidth="164.0" styleClass="Button" stylesheets="@application.css" text="Ürün Sil" textFill="#e10f0f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtAra" layoutX="62.0" layoutY="149.0" promptText="Ürün Ara" />
+      <Button fx:id="btnUrunAra" layoutX="218.0" layoutY="149.0" mnemonicParsing="false" onAction="#btn_ClickUrunAra" prefHeight="25.0" prefWidth="67.0" styleClass="Button" stylesheets="@application.css" text="Ara" />
+   </children>
+</AnchorPane>

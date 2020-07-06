@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.Button{
+	-fx-text-fill: white;
+	-fx-background-color:#44BBFF;
+	 -fx-font-size: 15px;
+	 -fx-font-weight: bold;
+	 -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.TextField{
+	-fx-background-color:forestgreen ;
+}
+.root{
+	-fx-background-color:#81E2E6;
+	-fx-border-width: 2px;
+	-fx-background-insets: 5px;
+}
+.Label{
+	-fx-font-family: "arial";
+	 -fx-font-size: 16px;
+	 -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-style: normal;
+    -fx-text-alignment: center;
+    -fx-font-weight: bolder;
+}

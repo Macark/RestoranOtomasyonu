@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="689.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Personeller">
+   <children>
+      <Label layoutX="70.0" layoutY="61.0" text="Personel Adı:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="94.0" text="Personel Soyadı:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="129.0" text="Personel Adresi:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="161.0" text="Personel Telefon:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="191.0" text="Personel Doğum Tarihi:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPersonelAdi" layoutX="167.0" layoutY="59.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtPersonelSoyadi" layoutX="167.0" layoutY="92.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtPersonelAdresi" layoutX="167.0" layoutY="127.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtPersonelTelefon" layoutX="167.0" layoutY="159.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="193.0" layoutY="8.0" prefHeight="39.0" prefWidth="262.0" text="Personel Bilgileri" textFill="#ee7504">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_PersonelBilgileri" layoutX="4.0" layoutY="226.0" prefHeight="181.0" prefWidth="679.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="6.0">
+        <columns>
+          <TableColumn fx:id="col_Id" prefWidth="47.0" text="ID" />
+          <TableColumn fx:id="col_PersonelAdi" prefWidth="103.0" text="Personel Adı" />
+            <TableColumn fx:id="col_PersonelSoyadı" prefWidth="98.0" text="Personel Soyadı" />
+            <TableColumn fx:id="col_PersonelAdresi" prefWidth="111.0" text="Personel Adresi" />
+            <TableColumn fx:id="col_PersonelTelefon" prefWidth="110.0" text="Personel Telefon" />
+            <TableColumn fx:id="col_PersonelDoğumTarihi" prefWidth="152.0" text="Personel Dogum Tarihi" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEkle" layoutX="391.0" layoutY="53.0" mnemonicParsing="false" onAction="#btn_ClickEkle" prefHeight="39.0" prefWidth="174.0" styleClass="Button" stylesheets="@application.css" text="Ekle" textFill="#11ab00">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="btnSil" layoutX="391.0" layoutY="107.0" mnemonicParsing="false" onAction="#btn_ClickSil" prefHeight="45.0" prefWidth="174.0" styleClass="Button" stylesheets="@application.css" text="Sil" textFill="#f50606">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGuncelle" layoutX="391.0" layoutY="161.0" mnemonicParsing="false" onAction="#btn_ClickGuncelle" prefHeight="46.0" prefWidth="174.0" styleClass="Button" stylesheets="@application.css" text="Güncelle" textFill="#ae9204">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtAra" layoutX="167.0" layoutY="229.0" prefHeight="25.0" prefWidth="174.0" promptText="Personel Arama" />
+      <Button fx:id="btnAra" layoutX="391.0" layoutY="222.0" mnemonicParsing="false" onAction="#btn_ClickAra" prefHeight="38.0" prefWidth="174.0" styleClass="Button" stylesheets="@application.css" text="Ara">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPersonelDogumTarihi" layoutX="167.0" layoutY="189.0" prefHeight="25.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>
